@@ -1,0 +1,778 @@
+<html>
+    <title>
+        SQL Rakerrank all solution
+    </title>
+    <head>
+        <style>
+        body{
+            margin: 0%;
+        }
+        .body{
+            width:80%;
+            background-color:rgb(119, 7, 119);
+            height:800%;
+            position: relative;
+            left: 10%;
+            z-index: 0;
+        }
+        .body1{
+            width:80%;
+            background-color: rgb(119, 7, 119);
+            height:25%;
+            position: relative;
+            left: 10%;
+            z-index: -1;
+        }
+        .taskbar{
+            width:80%;
+            height:70px;
+            background-color:rgb(253, 250, 253);
+            position: fixed;
+            z-index: 3;
+            top:-1px;
+            box-shadow:1px 5px 17px 5px bisque;
+        }
+        .t{
+            width:500px;
+            height:30px;
+            margin-top: 9%;
+            font-size: 20;
+            position: absolute;
+            left:50px;
+            z-index: 1;
+            border-radius: 20px;
+            border:solid white thin;
+        }
+        .qp{
+            
+            height:420px;
+            width:450px;
+            /*border:solid;*/
+            position: fixed;
+            font-size: 20;
+            z-index: 2;
+            top: 120px;
+            /*background-image:url('F:\.git\.git\q1.jpg');*/
+            margin-left:610px;
+            float: left;
+        }
+        .qn{
+            width:590px;
+            height:53px;
+            z-index: 1;
+            top:3%;
+            left:10px;
+            font-size: 40;
+            position: absolute;
+            border:2px solid skyblue;
+        }
+        .qn1{
+            width:590px;
+            height:53px;
+            top:7%;
+            font-size: 40;
+            z-index: 1;
+            left:10px;
+            position: absolute;
+            border:2px solid skyblue;
+            /*background-color: aquamarine;*/
+        }
+        .qn2{
+            width:590px;
+            height:53px;
+            top:13%;
+            font-size: 40;
+            z-index: 1;
+            left:10px;
+            position: absolute;
+            border:2px solid skyblue;
+            /*background-color: aquamarine;*/
+        }
+        .qn3{
+            width:590px;
+            height:53px;
+            top:18%;
+            font-size: 40;
+            z-index: 1;
+            left:10px;
+            position: absolute;
+            border:2px solid skyblue;
+            /*background-color: aquamarine;*/
+        }
+        .qn4{
+            width:590px;
+            height:53px;
+            top:22%;
+            font-size: 40;
+            z-index: 1;
+            left:10px;
+            position: absolute;
+            border:2px solid skyblue;
+        }
+        .qn5{
+            width:590px;
+            height:53px;
+            top:30%;
+            font-size: 40;
+            z-index: 1;
+            left:10px;
+            position: absolute;
+            border:2px solid skyblue;
+        }
+        .qn6{
+            width:590px;
+            height:53px;
+            top:35%;
+            font-size: 40;
+            z-index: 1;
+            left:10px; 
+            position: absolute;
+            border:2px solid skyblue;
+            /*background-color: aquamarine;*/
+        }
+        .qn7{
+            width:590px;
+            height:53px;
+            top:40%;
+            font-size: 40;
+            z-index: 1;
+            left:10px;
+            position: absolute;
+            border:2px solid skyblue;
+            /*background-color: aquamarine;*/
+        }
+        .qn8{
+            width:590px;
+            height:53px;
+            top:50%;
+            left:10px;
+            font-size: 40;
+            z-index: 1;
+            position: absolute;
+            border:2px solid skyblue;
+        }
+        .qn9{
+            width:590px;
+            height:53px;
+            top:58%;
+            left:10px;
+            font-size: 40;
+            z-index: 1;
+            position: absolute;
+            border:2px solid skyblue;
+        }
+        .qn10{
+            width:590px;
+            height:53px;
+            top:64%;
+            left:10px;
+            font-size: 40;
+            z-index: 1;
+            position: absolute;
+            border:2px solid skyblue;
+            /*background-color: aquamarine;*/
+        }
+        .qn11{
+            width:590px;
+            height:53px;
+            top:71%;
+            font-size: 40;
+            z-index: 1;
+            left:10px;
+            position: absolute;
+            border:2px solid skyblue;
+            /*background-color: aquamarine;*/
+        }
+        .qn12{
+            width:590px;
+            height:53px;
+            top:77%;
+            font-size: 40;
+            z-index: 1;
+            left:10px;
+            position: absolute;
+            border:2px solid skyblue;
+        }
+        .qn13{
+            width:590px;
+            height:53px;
+            top:83%;
+            font-size: 40;
+            z-index: 1;
+            left:10px;
+            position: absolute;
+            border:2px solid skyblue;
+        }
+        .qn14{
+            width:590px;
+            height:53px;
+            top:88%;
+            left:10px;
+            font-size: 40;
+            z-index: 1;
+            position: absolute;
+            border:2px solid skyblue;
+            /*background-color: aquamarine;*/
+        }
+        .qn15{
+            width:590px;
+            height:53px;
+            top:93%;
+            left:10px;
+            font-size: 40;
+            z-index: 1;
+            position: absolute;
+            border:2px solid skyblue;
+            /*background-color: aquamarine;*/
+        }
+        .qn16{
+            width:590px;
+            height:53px;
+            top:98%;
+            left:10px;
+            font-size: 40;
+            z-index: 1;
+            position: absolute;
+            border:2px solid skyblue;
+        }
+       
+        .q{
+            width:590px;
+            z-index: 1;
+            height:53px;
+            font-size: 25;
+            top:4%;
+            left:10px;
+            position: absolute;
+            border:2px solid white;
+           
+        }
+        .q1{
+            width:590px;
+            z-index: 1;
+            height:113px;
+            font-size: 25;
+            top:8%;
+            left:10px;
+            position: absolute;
+            border:2px solid white;
+        }
+        .q2{
+            width:590px;
+            z-index: 1;
+            height:90px;
+            font-size: 25;
+            top:14%;
+            position: absolute;
+            border:2px solid white;
+        }
+        .q3{
+            width:590px;
+            z-index: 1;
+            height:80px;
+            font-size: 25;
+            top:19%;
+            left:10px;
+            position: absolute;
+            border:2px solid white;
+        }
+        .q4{
+            width:590px;
+            z-index: 1;
+            height:141px;
+            font-size: 25;
+            left:10px;
+            top:23%;
+            position: absolute;
+            border:2px solid white;
+        }
+
+        .q5{
+            width:590px;
+            z-index: 1;
+            left:10px;
+            height:85px;
+            font-size: 25;
+            top:31%;
+            position: absolute;
+            border:2px solid white;
+        }
+        .q6{
+            width:590px;
+            z-index: 1;
+            height:90px;
+            font-size: 25;
+            top:36%;
+            left:10px;
+            position: absolute;
+            border:2px solid white;
+        }
+        .q7{
+            width:590px;
+            z-index: 1;
+            height:90px;
+            font-size: 25;
+            top:41%;
+            left:10px;
+            position: absolute;
+            border:2px solid white;
+        }
+        .q8{
+             width:590px;
+            z-index: 1;
+            height:70px;
+            font-size: 25;
+            top:51%;
+            left:10px;
+            position: absolute;
+            border:2px solid white;
+        }
+        .q9{
+            width:590px;
+            z-index: 1;
+            height:73px;
+            font-size: 25;
+            top:59%;
+            left:10px;
+            position: absolute;
+            border:2px solid white;
+        }
+
+        .q10{
+            width:590px;
+            z-index: 1;
+            left:10px;
+            height:90px;
+            font-size: 25;
+            top:65%;
+            position: absolute;
+            border:2px solid white;
+        }
+        .q11{
+            width:590px;
+            z-index: 1;
+            height:90px;
+            left:10px;
+            font-size: 25;
+            top:72%;
+            position: absolute;
+            border:2px solid white;
+        }
+        .q12{
+            width:590px;
+            z-index: 1;
+            height:90px;
+            font-size: 25;
+            top:78%;
+            left:10px;
+            position: absolute;
+            border:2px solid white;
+        }
+        .q13{
+            width:590px;
+            z-index: 1;
+            height:90px;
+            font-size: 25;
+            left:10px;
+            top:84%;
+            position: absolute;
+            border:2px solid white;
+        }
+        .q14{
+            width:590px;
+            z-index: 1;
+            height:90px;
+            font-size: 25;
+            top:89%;
+            left:10px;
+            position: absolute;
+            border:2px solid white;
+        }
+
+        .q15{
+            width:590px;
+            z-index: 1;
+            height:80px;
+            font-size: 25;
+            top:94%;
+            left:10px;
+            position: absolute;
+            border:2px solid white;
+        }
+        .q16{
+            width:590px;
+            z-index: 1;
+            height:80px;
+            font-size: 25;
+            top:99%;
+            left:10px;
+            position: absolute;
+            border:2px solid white;
+        }
+        
+        .ans{
+            width:590px;
+            z-index: 1;
+            height:40px;
+            top: 6%;
+            font-size: 25;
+            left:10px;
+            position: absolute; 
+        }
+        .ans1{
+            width:590px;
+            z-index: 1;
+            height:40px;
+            top: 11%;
+            font-size: 25;
+            left:10px;
+            position: absolute; 
+        }
+        .ans2{
+            width:590px;
+            z-index: 1;
+            height:40px;
+            top:16%;
+            left:10px;
+            font-size: 25;
+            position: absolute; 
+        }
+        .ans3{
+            width:590px;
+            z-index: 1;
+            height:40px;
+            top: 21%;
+            left:10px; 
+            font-size: 25;
+            position: absolute; 
+        }
+        .ans4{
+            width:590px;
+            z-index: 1;
+            height:40px;
+            top: 26%;
+            left:10px;
+            font-size: 25;
+            position: absolute; 
+        }
+        .ans5{
+            width:590px;
+            z-index: 1;
+            height:40px;
+            top: 33%;
+            left:10px;
+            font-size: 25;
+            position: absolute; 
+        }
+        .ans6{
+            width:590px;
+            z-index: 1;
+            height:40px;
+            top: 38%;
+            font-size: 25;
+            left:10px;
+            position: absolute; 
+        }
+        .ans7{
+            width:590px;
+            z-index: 1;
+            height:90px;
+            top: 43%;
+            left:10px;
+            font-size: 25;
+            position: absolute; 
+        }
+        .ans8{
+            width:590px;
+            z-index: 1;
+            height:40px;
+            top: 53%;
+            left:10px;
+            font-size: 25;
+            position: absolute; 
+        }
+        .ans9{
+            width:590px;
+            z-index: 1;
+            left:10px;
+            height:40px;
+            top: 61%;
+            font-size: 25;
+            position: absolute; 
+        }
+        .ans10{
+            width:590px;
+            z-index: 1;
+            height:40px;
+            top: 67%;
+            font-size: 25;
+            left:10px;
+            position: absolute; 
+        }
+        .ans11{
+            width:590px;
+            z-index: 1;
+            height:40px;
+            top: 74%;
+            left:10px;
+            font-size: 25;
+            position: absolute; 
+        }
+        .ans12{
+            width:590px;
+            z-index: 1;
+            height:40px;
+            top: 80%;
+            left:10px;
+            font-size: 25;
+            position: absolute; 
+        }
+        .ans13{
+            width:590px;
+            z-index: 1;
+            left:10px;
+            height:40px;
+            top: 86%;
+            font-size: 25;
+            position: absolute; 
+        }
+        .ans14{
+            width:590px;
+            z-index: 1;
+            height:40px;
+            left:10px;
+            top: 91%;
+            font-size: 25;
+            position: absolute; 
+        }
+        .ans15{
+            width:590px;
+            z-index: 1;
+            left:10px;
+            height:40px;
+            top: 96%;
+            font-size: 25;
+            position: absolute; 
+        }
+        .ans16{
+            width:590px;
+            z-index: 1;
+            left:10px;
+            height:40px;
+            top: 101%;
+            font-size: 25;
+            position: absolute; 
+        }
+        </style>
+    </head>
+    <body>
+        <div class="body">
+            <div class="taskbar">
+                <font size="6" color="black"><center><b><img src="C:\Users\User\Pictures\Saved Pictures\HackerRank_Icon-1000px.png" width="50px"height="50px">
+                    Hakerrank SQL Solutions</b></center></font>
+            </div>
+            <div class="t"> 
+                &nbsp; &nbsp; <font color="white">Questions given below follows by the STATION table:</font>
+            </div>
+            <p class="qp"><font color="white">
+                The STATION table is described as follows:</font><img src="E:\q1.jpg" width="450px" height="420px">
+            </p>
+            <div class="qn">
+                <font color="white">Weather Observation Station 1</font>
+            </div>
+            <div class="q">
+                <font color="white">Query a list of CITY and STATE from the STATION table</font>
+            </div>
+            <div class="ans">
+                <font color="white"><b>Ans: </b>select city ,state from station;</font>
+            </div>
+            <div class="qn1">
+                <font color="white">Weather Observation Station 2</font>
+            </div>
+            <div class="q1">
+                <font color="white">1.	The sum of all values in LAT_N rounded to a scale of  decimal places.
+                <br>2.	The sum of all values in LONG_W rounded to a scale of  decimal places.
+                </font>
+            </div>
+            <div class="ans1">
+                <font color="white"><b>Ans: </b>select round(sum(lat_n),2),round(sum(long_w),2) from station;</font>
+            </div>
+            <div class="qn2">
+                <font color="white">Weather Observation Station 3</font>
+            </div>
+            <div class="q2">
+                <font color="white">Query a list of CITY names from STATION for cities that have an even ID number. Print
+                 the results in any order, but exclude duplicates from the answer.</font>
+            </div>
+            <div class="ans2">
+                <font color="white"><b>Ans: </b>select distinct city from station where Mod(id,2)=0 group by city;</font>
+            </div>
+            <div class="qn3">
+                <font color="white">Weather Observation Station 4</font>
+            </div>
+            <div class="q3">
+                <font color="white">Find the difference between the total number of CITY entries in the table and the number
+                 of distinct CITY entries in the table.</font>
+            </div>
+            <div class="ans3">
+                <font color="white"><b>Ans: </b>select count(city)- count(distinct city) from station;</font>
+            </div>
+            <div class="qn4">
+                <font color="white">Weather Observation Station 5</font>
+            </div>
+            <div class="q4">
+                <font color="white">Query the two cities in STATION with the shortest and longest CITY names, 
+                as well as their respective lengths (i.e.: number of characters in the name). If there is more than one
+                 smallest or largest city, choose the one that comes first when ordered alphabetically.</font>
+            </div>
+            <div class="ans4">
+                <font color="white"><b>Ans: </b>SELECT * FROM (SELECT DISTINCT city, LENGTH(city) FROM station ORDER BY LENGTH(city) ASC, city ASC) WHERE ROWNUM = 1   
+                UNION  
+                SELECT * FROM (SELECT DISTINCT city, LENGTH(city) FROM station ORDER BY LENGTH(city) DESC, city ASC) WHERE ROWNUM = 1;  
+                </font>
+            </div>
+            <div class="qn5">
+                <font color="white">Weather Observation Station 6</font>
+            </div>
+            <div class="q5">
+                <font color="white">Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from 
+                STATION. Your result cannot contain duplicates.</font>
+            </div>
+            <div class="ans5">
+                <font color="white"><b>Ans: </b>SELECT DISTINCT city FROM station WHERE city LIKE 'A%' OR city LIKE 'E%' 
+                OR city LIKE 'I%' OR city LIKE 'O%' OR city LIKE 'U%';</font>
+            </div>
+            <div class="qn6">
+                <font color="white">Weather Observation Station 7</font>
+            </div>
+            <div class="q6">
+                <font color="white">Query the list of CITY names ending with vowels (a, e, i, o, u)
+                from STATION. Your result cannot contain duplicates. </font>
+            </div>
+            <div class="ans6">
+                <font color="white"><b>Ans: </b>select distinct(city) from station where city like '%a' or city like 
+                '%e' or city like '%i' or city like '%o' or city like '%u';</font>
+            </div>
+            <div class="qn7">
+                <font color="white">Weather Observation Station 8</font>
+            </div>
+            <div class="q7">
+                <font color="white">Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o,
+                and u) as both their first and last characters. Your result cannot contain duplicates.</font>
+            </div>
+            <div class="ans7">
+                <font color="white"><b>Ans: </b>SELECT DISTINCT city FROM (SELECT DISTINCT city FROM station WHERE
+                     city LIKE 'A%' OR city LIKE 'E%' OR city LIKE 'I%' OR city LIKE 'O%' OR city LIKE 'U%') WHERE city LIKE '%a' 
+                     OR city LIKE '%e' OR city LIKE '%i' OR city LIKE '%o' OR city LIKE '%u';<br>
+                    Or<br>
+                    SELECT DISTINCT city FROM station WHERE (city LIKE 'A%' OR city LIKE 'E%' OR city LIKE 'I%' OR city LIKE 
+                    'O%' OR city LIKE 'U%') AND (city LIKE '%a' OR city LIKE '%e' OR city LIKE '%i' OR city LIKE '%o' OR city LIKE 
+                    '%u');
+                </font>
+            </div>
+            <div class="qn8">
+                <font color="white">Weather Observation Station 9</font>
+            </div>
+            <div class="q8">
+                <font color="white">Query the list of CITY names from STATION that do not start with vowels. 
+                Your result cannot contain duplicates.</font>
+            </div>
+            <div class="ans8">
+                <font color="white"><b>Ans: </b>SELECT DISTINCT city FROM station WHERE NOT (city LIKE 'A%' OR city
+                     LIKE 'E%' OR city LIKE 'I%' OR city LIKE 'O%' OR city LIKE 'U%');<br>
+                    Or,<br>
+                    SELECT DISTINCT CITY FROM STATION WHERE upper(SUBSTR(CITY,1,1)) NOT IN ('A','E','I','O','U') AND lower
+                    (SUBSTR(CITY,1,1)) NOT IN('a','e','i','o','u');
+                </font>
+            </div>
+            <div class="qn9">
+                <font color="white">Weather Observation Station 10</font>
+            </div>
+            <div class="q9">
+                <font color="white">Query the list of CITY names from STATION that do not end with vowels.
+                Your result cannot contain duplicates.</font>
+            </div>
+            <div class="ans9"><font color="white"><b>Ans: </b>SELECT DISTINCT CITY FROM STATION WHERE NOT(CITY LIKE '%a' 
+                OR CITY LIKE '%e' OR CITY LIKE '%i' OR CITY LIKE '%o' OR CITY LIKE '%u');</font>
+            </div>
+            <div class="qn10">
+                <font color="white">Weather Observation Station 11</font>
+            </div>
+            <div class="q10">
+                <font color="white">Query the list of CITY names from STATION that either do not start 
+                with vowels or do not end with vowels. Your result cannot contain duplicates.</font>
+            </div>
+            <div class="ans10">
+                <font color="white"><b>Ans: </b>select distinct city from station where (NOT (city LIKE 'A%'
+                     OR city LIKE 'E%' OR city LIKE 'I%' OR city LIKE 'O%' OR city LIKE 'U%') OR NOT (city like '%a' or city 
+                     like '%e' or city like '%i' or city like '%o' or city like '%u'));</font>
+            </div>
+            <div class="qn11">
+                <font color="white">Weather Observation Station 12</font>
+            </div>
+            <div class="q11">
+                <font color="white">Query the list of CITY names from STATION that do not start with vowels
+                and do not end with vowels. Your result cannot contain duplicates.</font>
+            </div>
+            <div class="ans11">
+                <font color="white"><b>Ans: </b>select distinct city from station where (NOT (city LIKE 'A%'
+                OR city LIKE 'E%' OR city LIKE 'I%' OR city LIKE 'O%' OR city LIKE 'U%') AND NOT (city like '%a' or city like 
+               '%e' or city like '%i' or city like '%o' or city like '%u'));</font>
+            </div>
+            <div class="qn12">
+                <font color="white">Weather Observation Station 13</font>
+            </div>
+            <div class="q12">
+                <font color="white">Query the sum of Northern Latitudes (LAT_N) from STATION having values greater 
+                38.7880 than  and less than 137.2345 . Truncate your answer to 4  decimal places.</font>
+            </div>
+            <div class="ans12">
+                <font color="white"><b>Ans: </b>select sum(lat_n) from station where lat_n between 38.7880 and 137.2345;
+                or select round(sum(lat_n),4) from station where lat_n between 38.7880 and 137.2345;</font>
+            </div>
+            <div class="qn13">
+                <font color="white">Weather Observation Station 14</font>
+            </div>
+            <div class="q13">
+                    <font color="white">Query the greatest value of the Northern Latitudes (LAT_N) from STATION that is less than .
+                     Truncate your answer to 4 decimal places.</font>
+            </div>
+            <div class="ans13">
+                    <font color="white"><b>Ans: </b>select round(max(lat_n),4) from station where lat_n<137.2345;</font>
+            </div>
+            <div class="qn14">
+                    <font color="white">Weather Observation Station 15</font>
+            </div>
+            <div class="q14">
+                <font color="white">Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION 
+                that is less than . Round your answer to  decimal places.</font>
+            </div>
+            <div class="ans14">
+                <font color="white"><b>Ans: </b>Select ROUND(LONG_W,4) from STATION WHERE LAT_N = (SELECT MAX(LAT_N) 
+                FROM STATION WHERE LAT_N<137.2345);</font>
+            </div>
+            <div class="qn15">
+                <font color="white">Weather Observation Station 16</font>
+            </div>
+            <div class="q15"><font color="white">Query the smallest Northern Latitude (LAT_N) from STATION that is greater than .
+                Round your answer to  decimal places.</font>
+            </div>
+            <div class="ans15">
+                <font color="white"><b>Ans: </b>select round(min(lat_n),4)from station where lat_n>38.7780;</font>
+            </div>
+            <div class="qn16">
+                <font color="white">Weather Observation Station 17</font>
+            </div>
+            <div class="q16">
+                <font color="white">Query the Western Longitude (LONG_W)where the smallest Northern Latitude (LAT_N) in 
+                STATION is greater than . Round your answer to  decimal places.</font>
+            </div>
+            <div class="ans16">
+                <font color="white"><b>Ans: </b>select round((long_w),4) from station where LAT_N=(select min(LAT_N) 
+                from STATION where LAT_N>38.7780);</font>
+            </div>
+        </div>
+            <div class="body1"></div>      
+         
+    </body>
+</html>
